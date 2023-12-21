@@ -1,0 +1,153 @@
+:root {
+    --vermelho-fraco: hsl(356, 100%, 66%);
+    --vermelho-mais-fraco: hsl(355, 100%, 74%);
+    --azul-escuro: hsl(208, 49%, 24%);
+
+    --branco-texto: hsl(0, 0%, 100%);
+    --cinza-azulado: hsl(240, 2%, 79%);
+    --cinza-azulado-escuro: hsl(207, 13%, 34%);
+    --cinza-azulado-mais-escuro: hsl(240, 10%, 16%);
+
+    --vermelho-clarinho: hsl(13, 100%, 72%);
+    --vermelho: hsl(353, 100%, 62%);
+
+    --cinza-azulado-muito-escuro: hsl(237, 17%, 21%);
+    --cinza-azulado-dessaturado: hsl(237, 23%, 32%);
+
+    --fonte-primaria: 'Overpass', sans-serif;
+    --fonte-secundaria: 'Ubuntu', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+ul {
+    display: none;
+}
+
+a {
+    font-family: var(--fonte-primaria);
+    text-decoration: none;
+    color: var(--cinza-azulado);
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+}
+
+a:hover{
+    text-decoration: underline 2px;
+    color: var(--branco-texto);
+}
+
+.start-container {
+    background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to right, var(--vermelho-clarinho), rgba(253, 35, 71, 0.904));
+    background-size: 2750px 2500px, contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 65%;
+    border-bottom-left-radius: 60px;
+    position: relative;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 120px;
+}
+
+.container-header{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow{
+    background-repeat: no-repeat;
+}
+
+.btn-login{
+    border: transparent;
+    background: transparent;
+    color: var(--cinza-azulado);
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    padding: 12px 30px;
+}
+
+.btn-signup{
+    padding: 12px 30px;
+    background-color: var(--branco-texto);
+    border: none;
+    border-radius: 50px;
+    color: var(--vermelho-fraco);
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+}
+
+.btn-signup:hover{
+    background-color: var(--vermelho-mais-fraco);
+    color: var(--branco-texto);
+}
+
+button{
+    cursor: pointer;
+}
+
+.start-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+}
+
+h1{
+    color: var(--branco-texto);
+    font-family: var(--fonte-primaria);
+    font-size: 100px;
+}
+
+.start-text p{
+    color: var(--cinza-azulado);
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+.btn-learnmore{
+    padding: 12px 30px;
+    background-color: transparent;
+    border: 1px solid var(--branco-texto);
+    border-radius: 50px;
+    color: var(--branco-texto);
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+}
+
+.btn-learnmore:hover{
+    background-color: var(--branco-texto);
+    color: var(--vermelho-fraco);
+}
+
+.container-buttons{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
